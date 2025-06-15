@@ -1,1 +1,24 @@
-
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snack Game: What's Safe?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🕹️ Snack Game: What's Safe?</h1>
+    <div id="game">
+      <div id="question">Loading...</div>
+      <div class="choices">
+        <button onclick="answer('safe')">✅ Safe</button>
+        <button onclick="answer('maybe')">⚠️ Maybe</button>
+        <button onclick="answer('not')">❌ Not Safe</button>
+      </div>
+      <div id="feedback"></div>
+      <button id="next" onclick="nextQuestion()">Next ➡️</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
